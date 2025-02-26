@@ -10,22 +10,23 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center; /* Центрируем содержимое по горизонтали */
-            align-items: center; /* Центрируем содержимое по вертикали */
+            justify-content: space-between; /* Располагаем категории по горизонтали */
+            align-items: center; /* Центрируем вертикально */
             height: 100vh; /* Занимает всю высоту экрана */
             background-color: #f4f4f9;
+            flex-direction: row; /* Расположение по строке */
+            padding: 0 20px; /* Добавляем отступы для предотвращения прилипания к краям */
         }
 
         .container {
             display: flex;
-            flex-direction: column;
-            align-items: center; /* Центрируем категории */
-            gap: 20px; /* Отступ между категориями */
+            width: 100%; /* Занимает всю ширину экрана */
+            justify-content: space-between; /* Располагаем категории слева, по центру и справа */
         }
 
         .category {
             text-align: center;
-            width: 300px; /* Фиксированная ширина для каждой категории */
+            width: 30%; /* Каждая категория занимает примерно 30% ширины */
             background-color: #ffffff;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -69,7 +70,7 @@
 
     <div class="container">
 
-        <!-- Категория 1 -->
+        <!-- Категория 1 (слева) -->
         <div class="category">
             <h2>Категория 1</h2>
             <ul>
@@ -82,7 +83,7 @@
             </div>
         </div>
 
-        <!-- Категория 2 -->
+        <!-- Категория 2 (по центру) -->
         <div class="category">
             <h2>Категория 2</h2>
             <ul>
@@ -95,7 +96,7 @@
             </div>
         </div>
 
-        <!-- Категория 3 -->
+        <!-- Категория 3 (справа) -->
         <div class="category">
             <h2>Категория 3</h2>
             <ul>
@@ -103,8 +104,8 @@
                 <li>Пункт Y</li>
                 <li>Пункт Z</li>
             </ul>
-	    <div class="image-container">
-                <img src="legenda.png" alt="legenda">
+            <div class="image-container">
+                <img src="lisofan.png" alt="Lisofan">
         </div>
 
     </div>
