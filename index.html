@@ -59,11 +59,23 @@
         }
 
         .image-container img {
-            width: 320x;
+            width: 320px;
             height: 240px;
             object-fit: cover;
             border-radius: 4px;
         }
+        
+        @media screen and (max-width: 1300px) {
+            .image-container img {
+                width: 120px;
+                height: 60px;
+            }
+            video {
+            width: 120px;
+            height: 60px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -100,7 +112,7 @@
 
         <!-- Категория 3 (справа) -->
         <div class="category">
-            <h2>Категория 3</h2>
+            <h2>Работа со звуком</h2>
             <ul>
                 <li><a href="https://openai.com/index/jukebox/" target="_blank">OpenAI Jukedeck</a> - Генерация музыки на основе заданных параметров, таких как стиль и настроение.</li>
                 <li><a href="https://soundraw.io/" target="_blank">Soundraw</a> - Генератор музыки на основе ИИ, использует нейросети для создания новых звуков, комбинируя существующие звуки.</li>
