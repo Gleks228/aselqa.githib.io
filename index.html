@@ -12,7 +12,7 @@
             display: flex;
             justify-content: space-between; /* Располагаем категории по горизонтали */
             align-items: center; /* Центрируем вертикально */
-            height: 100vh; /* Занимает всю высоту экрана */
+            min-height: 100vh; /* Занимает всю высоту экрана */
             background-color: #f4f4f9;
             flex-direction: row; /* Расположение по строке */
             padding: 0 20px; /* Добавляем отступы для предотвращения прилипания к краям */
@@ -26,7 +26,7 @@
 
         .category {
             text-align: center;
-            width: 30%; /* Каждая категория занимает примерно 30% ширины */
+            width: 30%; 
             background-color: #ffffff;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -67,12 +67,18 @@
         
         @media screen and (max-width: 1300px) {
             .image-container img {
-                width: 120px;
-                height: 60px;
+                width: 300px;
+                height: 220px;
             }
             video {
-            width: 120px;
-            height: 60px;
+            width: 300px;
+            height: 220px;
+            }
+            .container{
+            display:block;
+            }
+            .category{
+            width:90%;
             }
         }
 
